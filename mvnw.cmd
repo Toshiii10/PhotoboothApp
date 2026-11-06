@@ -10,7 +10,7 @@ set "MVN_VERSION=3.9.9"
 set "DISTS=%USERPROFILE%\.m2\wrapper\dists"
 set "MVN_CMD="
 
-where mvn >nul 2>nul && set "MVN_CMD=mvn"
+for /f "delims=" %%F in ('where mvn.cmd 2^>nul') do if not defined MVN_CMD set "MVN_CMD=%%F"
 
 if not defined MVN_CMD (
     for /f "delims=" %%F in ('dir /b /s "%DISTS%\mvn.cmd" 2^>nul') do set "MVN_CMD=%%F"

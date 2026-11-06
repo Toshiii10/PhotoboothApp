@@ -1,0 +1,14 @@
+**/target/
+/build/
+/dist/
+.idea/
+.vscode/
+*.iml
+*.log
+*.mv.db
+*.trace.db
+/photobooth-output/
+.env
+.env.*
+!.env.example
+

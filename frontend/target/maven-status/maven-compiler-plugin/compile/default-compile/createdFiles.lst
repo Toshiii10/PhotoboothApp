@@ -1,0 +1,13 @@
+com\photobooth\frontend\PhotoboothApp.class
+com\photobooth\frontend\BackendClient$ThemeItem.class
+com\photobooth\frontend\BackendClient$SlotRect.class
+com\photobooth\frontend\BackendClient.class
+com\photobooth\frontend\CameraService$CameraDevice.class
+com\photobooth\frontend\DesktopBackend.class
+com\photobooth\frontend\DesktopLauncher.class
+com\photobooth\frontend\Launcher.class
+com\photobooth\frontend\BackendClient$LayoutItem.class
+com\photobooth\frontend\CameraService.class
+com\photobooth\frontend\BackendClient$PhotoItem.class
+com\photobooth\frontend\BackendClient$CustomFrameItem.class
+com\photobooth\frontend\CameraService$Filter.class
