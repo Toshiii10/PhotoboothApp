@@ -1,0 +1,16 @@
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\controller\Dtos.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\controller\PhotoController.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\entity\CustomFrame.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\entity\Photo.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\model\FrameLayout.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\model\Theme.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\PhotoboothBackendApplication.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\repository\CustomFrameRepository.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\repository\PhotoRepository.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\service\CompositionService.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\service\FrameService.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\service\ImageUtils.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\service\PhotoService.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\service\SampleFrameSeeder.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\service\SlotDetector.java
+D:\Personal Projects\InProgress\Photobooth\backend\src\main\java\com\photobooth\backend\service\StorageService.java

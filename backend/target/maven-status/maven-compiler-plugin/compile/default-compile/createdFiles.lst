@@ -1,0 +1,5 @@
+com\photobooth\backend\service\StorageService.class
+com\photobooth\backend\model\FrameLayout.class
+com\photobooth\backend\service\CompositionService.class
+com\photobooth\backend\controller\PhotoController.class
+com\photobooth\backend\PhotoboothBackendApplication.class
