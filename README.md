@@ -79,35 +79,6 @@ Outputs are in `dist/`: a portable ZIP, an installer EXE when requested, and SHA
 checksum files. The generated app image is under `build/windows-*/image/`.
 `-SkipBuild` reuses an existing Maven package for local packaging iterations.
 
-## GitHub builds and releases
-
-The [Windows workflow](.github/workflows/windows-release.yml) builds and smoke-tests
-the ZIP and installer for pull requests and pushes to `main` or `master`.
-It can also be run manually under **Actions > Windows application**.
-Download its `photobooth-windows-x64` artifact to inspect the files.
-
-After committing the source and setting up your GitHub repository, a version tag
-creates a **draft** GitHub Release containing the installer, ZIP, and checksums:
-
-```powershell
-git tag v1.0.0
-git push origin v1.0.0
-```
-
-Review the draft and publish it after completing the checks below. The workflow
-does not automatically publish drafts. Build outputs and local databases are ignored
-by Git; distribute binaries as release assets, not source commits.
-
-### Before publishing
-
-- Test the installer on a Windows x64 PC or VM with no Java, Maven, or IDE installed.
-- Launch from its desktop and Start menu shortcuts and from a Windows account with a space in its name.
-- Capture with a physical webcam; verify filters, multi-shot layouts, custom frames, export, and gallery persistence.
-- Close and reopen the app; confirm it releases the camera and stops its backend.
-- Check that a second launch shows an already-running message, and that upgrading or uninstalling preserves the photo library.
-
-The automated build and smoke test do not replace these hardware and installer checks.
-
 ## Features
 
 - Single, strip, horizontal, and grid layouts with one to six shots.
