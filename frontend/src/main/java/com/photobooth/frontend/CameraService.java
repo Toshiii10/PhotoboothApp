@@ -28,7 +28,7 @@ public class CameraService {
     public record CameraDevice(String id, String displayName, boolean demo) {
         @Override
         public String toString() {
-            return demo ? "🎬 " + displayName : "📷 " + displayName;
+            return displayName;
         }
     }
 
@@ -303,12 +303,11 @@ public class CameraService {
         g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
-        float hue = (tick % 360) / 360f;
-        g.setPaint(new GradientPaint(0, 0, Color.getHSBColor(hue, 0.55f, 0.85f),
-                w, h, Color.getHSBColor((hue + 0.25f) % 1f, 0.65f, 0.55f)));
+        g.setPaint(new GradientPaint(0, 0, new Color(34, 39, 37),
+                w, h, new Color(57, 67, 57)));
         g.fillRect(0, 0, w, h);
 
-        g.setColor(new Color(255, 255, 255, 45));
+        g.setColor(new Color(230, 181, 130, 13));
         for (int i = 0; i < 6; i++) {
             double angle = (tick * 0.03) + i * 1.1;
             int cx = (int) (w / 2.0 + Math.cos(angle) * 180);
@@ -318,15 +317,18 @@ public class CameraService {
         }
 
         g.setColor(Color.WHITE);
-        g.setFont(new Font("Segoe UI", Font.BOLD, 30));
-        String msg = "STUDIO DEMO CAMERA";
+        g.setFont(new Font("Segoe UI", Font.BOLD, 26));
+        String msg = "The spotlight is yours.";
         int mw = g.getFontMetrics().stringWidth(msg);
         g.drawString(msg, (w - mw) / 2, h / 2 - 10);
 
-        g.setFont(new Font("Consolas", Font.PLAIN, 20));
+        g.setColor(new Color(181, 189, 177));
+        g.setFont(new Font("Segoe UI", Font.PLAIN, 14));
+        String hint = "Choose a camera in Camera & countdown to join the frame.";
+        g.drawString(hint, (w - g.getFontMetrics().stringWidth(hint)) / 2, h / 2 + 20);
+        g.setFont(new Font("Consolas", Font.PLAIN, 11));
         String time = LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
-        int tw = g.getFontMetrics().stringWidth(time);
-        g.drawString(time, (w - tw) / 2, h / 2 + 28);
+        g.drawString("STUDIO DEMO  /  " + time, 24, h - 24);
 
         g.dispose();
         return img;
